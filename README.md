@@ -1,4 +1,4 @@
-# Track B: OpenFOAM v13 기반 Propeller Disk IGE 정량화
+# CFD_Study(OpenFOAM v13) -- Propeller Disk IGE
 
 이 프로젝트는 OpenFOAM Foundation v13의 `propellerDisk` fvModel과 `createZones` 기반 mesh-zone workflow를 이용해 hover in-ground-effect(IGE) 조건을 모델링하고, 프로펠러 높이 `h/R` 변화에 따른 성능비와 near-ground outwash peak 위치를 정량적으로 비교한 작업이다.
 
