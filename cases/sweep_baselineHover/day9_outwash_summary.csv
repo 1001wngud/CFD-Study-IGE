@@ -1,0 +1,6 @@
+case,h_over_R,z_plane_m,rmax_m,rmax_R,vr_peak_mps,n_points,valid_bins,status,note,source_xy
+hR4,4,0.01,0.48318963381080754,1.9327585352432302,0.27337484244757204,4224,112,ok,ok,/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR4/postProcessing/outwashSurfaces/1000/groundPlane.xy
+hR2,2,0.01,0.41247895569215276,1.649915822768611,0.420711164403806,4224,112,ok,ok,/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR2/postProcessing/outwashSurfaces/1000/groundPlane.xy
+hR1,1,0.01,0.34176827757349804,1.3670731102939921,0.5231999900534664,4224,112,ok,ok,/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR1/postProcessing/outwashSurfaces/1000/groundPlane.xy
+hR0p5,0.5,0.01,0.3181980515339464,1.2727922061357857,0.5542382631121096,4224,112,ok,ok,/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR0p5/postProcessing/outwashSurfaces/1000/groundPlane.xy
+hR0p35,0.35,0.01,0.3181980515339464,1.2727922061357857,0.5491452153442249,4224,112,ok,ok,/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR0p35/postProcessing/outwashSurfaces/1000/groundPlane.xy

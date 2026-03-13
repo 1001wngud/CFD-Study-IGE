@@ -1,0 +1,18 @@
+Day10 QC Report
+================
+
+row_count: 5
+required_cases: hR4, hR2, hR1, hR0p5, hR0p35
+missing_in_day7: none
+missing_in_day9: none
+duplicate_cases_day7: none
+duplicate_cases_day9: none
+unique_z_plane_m: ['0.01']
+all_day9_status_ok: True
+rmax_R_trend_check: nonincreasing_with_decreasing_hR
+
+hR4: h/R=4, T/Tref=1.00000000, P/Pref=1.00000000, rmax/R=1.9327585352432302, Vr_peak=0.27337484244757204, z=0.01, day7_status=ok, day9_status=ok
+hR2: h/R=2, T/Tref=1.06613377, P/Pref=1.04373033, rmax/R=1.649915822768611, Vr_peak=0.420711164403806, z=0.01, day7_status=ok, day9_status=ok
+hR1: h/R=1, T/Tref=1.08174701, P/Pref=1.05391000, rmax/R=1.3670731102939921, Vr_peak=0.5231999900534664, z=0.01, day7_status=ok, day9_status=ok
+hR0p5: h/R=0.5, T/Tref=1.08174701, P/Pref=1.05391000, rmax/R=1.2727922061357857, Vr_peak=0.5542382631121096, z=0.01, day7_status=ok, day9_status=ok
+hR0p35: h/R=0.35, T/Tref=1.08174701, P/Pref=1.05391000, rmax/R=1.2727922061357857, Vr_peak=0.5491452153442249, z=0.01, day7_status=ok, day9_status=ok

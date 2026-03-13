@@ -1,0 +1,9 @@
+logFile=postProcessing/diskSource/0/propellerDisk.dat
+time=1000 n=6.000000e+00
+T_over_rho=7.350750e-01 Q_over_rho=4.216500e-02 P_over_rho=1.58958305086
+J_allowed_min=-0.5 J_allowed_max=0.8
+window=100 T_relRange_pct=0 Q_relRange_pct=0
+J_window min=0.4598817 max=0.4758686 outOfRange=0/100
+Jcorr_window min=0.03418379 max=0.07864125 outOfRange=0/100
+status=ok
+Wrote: results/ref.json, results/ref.csv

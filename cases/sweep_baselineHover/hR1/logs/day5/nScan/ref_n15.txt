@@ -1,0 +1,9 @@
+logFile=postProcessing/diskSource/0/propellerDisk.dat
+time=40 n=1.500000e+01
+T_over_rho=4.594219e+00 Q_over_rho=2.635312e-01 P_over_rho=24.8372304574
+J_allowed_min=0.1 J_allowed_max=0.8
+window=20 T_relRange_pct=210.538351274 Q_relRange_pct=145.548388539
+J_window min=0.1133574 max=3.489213 outOfRange=11/20
+Jcorr_window min=-2.71712 max=3.479149 outOfRange=16/20
+status=provisional_j_bounds_out_of_range
+Wrote: results/ref.json, results/ref.csv

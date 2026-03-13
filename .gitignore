@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor / OS
+.DS_Store
+*.swp
+*.swo
+
+# ParaView / OpenFOAM helper files
+*.OpenFOAM
+*.foam
+paraFoam*
+
+# OpenFOAM runtime outputs
+cases/**/postProcessing/
+cases/**/processor*/
+cases/**/[1-9]*/
+cases/**/0.[0-9]*/
+cases/**/[1-9]*.[0-9]*/
+
+# Optional local visualization state
+*.pvsm

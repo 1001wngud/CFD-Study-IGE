@@ -1,0 +1,2 @@
+hOverR,time,n,T_over_rho,Q_over_rho,P_over_rho,J_allowed_min,J_allowed_max,T_mean_win,T_relRange_pct_win,Q_mean_win,Q_relRange_pct_win,J_mean_win,J_min_win,J_max_win,J_outOfRange_win_count,Jcorr_mean_win,Jcorr_min_win,Jcorr_max_win,Jcorr_outOfRange_win_count,status
+4,40,2.600000e+01,1.380307e+01,7.917650e-01,129.344961583,0.1,0.8,4.47411055,275.175252431,0.34041415,175.434481792,1.9374594565,0.03563177,6.043309,17,1.0303451935,-9.084726,6.037499,18,provisional_j_bounds_out_of_range

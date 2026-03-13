@@ -1,0 +1,1 @@
+{"status": "ok", "note": "ok", "n_points": 4224, "valid_bins": 112, "z_plane_m": 0.01, "rmax_m": 0.48318963381080754, "rmax_R": 1.9327585352432302, "vr_peak_mps": 0.27337484244757204, "xy_path": "/home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR4/postProcessing/outwashSurfaces/1000/groundPlane.xy"}

@@ -1,0 +1,1080 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun
+Date   : Feb 26 2026
+Time   : 15:29:22
+Host   : "JOO-DESKTOP"
+PID    : 34777
+I/O    : uncollated
+Case   : /home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/baseCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1000
+
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type RAS
+    Selecting RAS turbulence model kOmegaSST
+No MRF models present
+
+Selecting patchDistMethod meshWave
+Creating fvModels from "constant/fvModels"
+
+Selecting finite volume model type propellerDisk
+    Name: diskSource
+
+SIMPLE: Convergence criteria found
+        p: tolerance 0.0001
+        U: tolerance 1e-05
+        k: tolerance 1e-05
+        omega: tolerance 1e-05
+
+
+SIMPLE: Operating solver in steady-state mode with 1 outer corrector
+SIMPLE: Operating solver in SIMPLE mode
+
+
+
+Starting time loop
+
+Reading set description:
+    line
+
+volFieldValue Uavg_propeller read:
+    number of cells = 160
+    volume = 0.01
+    operation = volAverage
+
+surfaceFieldValue phi_farField read:
+    number of faces = 7680
+    area = 9.6
+    operation = orientedSum
+
+surfaceFieldValue phi_top read:
+    number of faces = 1600
+    area = 4
+    operation = orientedSum
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.4157 722.597 89.4682)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -223.886
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 221.022
+
+Time = 1001s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000714887, Final residual = 3.13793e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00310404, Final residual = 0.00013786, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0034193, Final residual = 0.000153632, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0550944, Final residual = 0.00258277, No Iterations 21
+time step continuity errors : sum local = 1.38548, global = -0.259257, cumulative = -0.259257
+smoothSolver:  Solving for omega, Initial residual = 0.0013509, Final residual = 8.86283e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0172934, Final residual = 0.000713675, No Iterations 1
+ExecutionTime = 0.907427 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.5302 722.759 89.6305)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -224.452
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 223.208
+
+Time = 1002s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000708936, Final residual = 3.06501e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00307215, Final residual = 0.00013582, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00340963, Final residual = 0.000151765, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0540659, Final residual = 0.00263698, No Iterations 10
+time step continuity errors : sum local = 1.43644, global = -0.511479, cumulative = -0.770736
+smoothSolver:  Solving for omega, Initial residual = 0.00136109, Final residual = 8.89426e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0166781, Final residual = 0.000752338, No Iterations 1
+ExecutionTime = 0.999548 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.6438 722.926 89.7593)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -225.317
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 222.862
+
+Time = 1003s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000702182, Final residual = 2.98818e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00302774, Final residual = 0.000133783, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00338563, Final residual = 0.000149825, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0545518, Final residual = 0.0023878, No Iterations 10
+time step continuity errors : sum local = 1.28612, global = -0.39102, cumulative = -1.16176
+smoothSolver:  Solving for omega, Initial residual = 0.00137363, Final residual = 8.92642e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.01353, Final residual = 0.000620355, No Iterations 1
+ExecutionTime = 1.08504 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7378 723.116 89.8482)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -226.04
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 224.163
+
+Time = 1004s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000695763, Final residual = 2.92236e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00298498, Final residual = 0.000131843, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00335474, Final residual = 0.000147587, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0555, Final residual = 0.00227998, No Iterations 10
+time step continuity errors : sum local = 1.20477, global = -0.219011, cumulative = -1.38077
+smoothSolver:  Solving for omega, Initial residual = 0.00138058, Final residual = 8.94244e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0119043, Final residual = 0.000544603, No Iterations 1
+ExecutionTime = 1.17377 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7945 723.328 89.8953)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -226.62
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 225.568
+
+Time = 1005s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000688814, Final residual = 2.86423e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00294263, Final residual = 0.000129929, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00331657, Final residual = 0.000144717, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.055357, Final residual = 0.00242879, No Iterations 10
+time step continuity errors : sum local = 1.28216, global = 0.0615349, cumulative = -1.31923
+smoothSolver:  Solving for omega, Initial residual = 0.0013832, Final residual = 8.96078e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.01196, Final residual = 0.00052775, No Iterations 1
+ExecutionTime = 1.26316 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.8119 723.559 89.8984)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -226.65
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 226.945
+
+Time = 1006s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000679097, Final residual = 2.81273e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00289482, Final residual = 0.000127713, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00327944, Final residual = 0.000141682, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0546968, Final residual = 0.00263923, No Iterations 18
+time step continuity errors : sum local = 1.39103, global = 0.361291, cumulative = -0.957942
+smoothSolver:  Solving for omega, Initial residual = 0.00138471, Final residual = 8.99576e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0171745, Final residual = 0.000699297, No Iterations 1
+ExecutionTime = 1.35775 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7934 723.821 89.8632)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -226.261
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 227.996
+
+Time = 1007s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000666718, Final residual = 2.76866e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00283068, Final residual = 0.00012512, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0032357, Final residual = 0.00013927, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0545457, Final residual = 0.00261351, No Iterations 25
+time step continuity errors : sum local = 1.35987, global = 0.233499, cumulative = -0.724443
+smoothSolver:  Solving for omega, Initial residual = 0.00138083, Final residual = 9.01598e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0170255, Final residual = 0.000732181, No Iterations 1
+ExecutionTime = 1.46493 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7528 724.13 89.7254)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -225.185
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 226.306
+
+Time = 1008s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000651105, Final residual = 2.73812e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00276189, Final residual = 0.000122474, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00319688, Final residual = 0.000137801, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0535293, Final residual = 0.00235461, No Iterations 26
+time step continuity errors : sum local = 1.23489, global = 0.135664, cumulative = -0.588779
+smoothSolver:  Solving for omega, Initial residual = 0.00136933, Final residual = 8.99531e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0158084, Final residual = 0.000677546, No Iterations 1
+ExecutionTime = 1.57556 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7307 724.479 89.3901)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -223.382
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 224.033
+
+Time = 1009s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000634425, Final residual = 2.70835e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00269805, Final residual = 0.000120386, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00319648, Final residual = 0.000137901, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.056651, Final residual = 0.0027223, No Iterations 25
+time step continuity errors : sum local = 1.3376, global = 0.0899905, cumulative = -0.498789
+smoothSolver:  Solving for omega, Initial residual = 0.00135583, Final residual = 8.95957e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0144454, Final residual = 0.000655138, No Iterations 1
+ExecutionTime = 1.68459 s  ClockTime = 1 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.7725 724.873 88.8434)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -220.972
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 221.403
+
+Time = 1010s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000618916, Final residual = 2.68905e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00263668, Final residual = 0.000118623, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00324411, Final residual = 0.000139104, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0585399, Final residual = 0.00289565, No Iterations 24
+time step continuity errors : sum local = 1.37636, global = 0.0874019, cumulative = -0.411387
+smoothSolver:  Solving for omega, Initial residual = 0.00134102, Final residual = 8.90691e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0173583, Final residual = 0.000741549, No Iterations 1
+ExecutionTime = 2.00501 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.8964 725.296 88.1335)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -218.253
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 218.673
+
+Time = 1011s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000608063, Final residual = 2.66588e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00257884, Final residual = 0.000117033, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00329517, Final residual = 0.000140463, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.060505, Final residual = 0.00286428, No Iterations 10
+time step continuity errors : sum local = 1.31023, global = 0.465154, cumulative = 0.0537669
+smoothSolver:  Solving for omega, Initial residual = 0.00132566, Final residual = 8.84871e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0168447, Final residual = 0.000807991, No Iterations 1
+ExecutionTime = 2.09454 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.0687 725.729 87.3595)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -215.284
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 217.517
+
+Time = 1012s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000598292, Final residual = 2.63241e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00252369, Final residual = 0.00011545, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00326835, Final residual = 0.000139545, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0603888, Final residual = 0.00261007, No Iterations 10
+time step continuity errors : sum local = 1.18331, global = 0.265685, cumulative = 0.319452
+smoothSolver:  Solving for omega, Initial residual = 0.00130815, Final residual = 8.76054e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0147247, Final residual = 0.000746615, No Iterations 1
+ExecutionTime = 2.17969 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.2456 726.165 86.5986)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -212.434
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 213.71
+
+Time = 1013s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000589864, Final residual = 2.60458e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0024756, Final residual = 0.000114024, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00323714, Final residual = 0.000138614, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0602619, Final residual = 0.00258497, No Iterations 10
+time step continuity errors : sum local = 1.15552, global = 0.0369232, cumulative = 0.356375
+smoothSolver:  Solving for omega, Initial residual = 0.00128831, Final residual = 8.64366e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0139828, Final residual = 0.000720061, No Iterations 1
+ExecutionTime = 2.27007 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.4115 726.591 85.8645)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -210.032
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 210.21
+
+Time = 1014s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000583196, Final residual = 2.56959e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00243411, Final residual = 0.000112793, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0032036, Final residual = 0.00013715, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0584068, Final residual = 0.00286919, No Iterations 11
+time step continuity errors : sum local = 1.29444, global = -0.264227, cumulative = 0.0921476
+smoothSolver:  Solving for omega, Initial residual = 0.00127079, Final residual = 8.51717e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0172458, Final residual = 0.000812726, No Iterations 1
+ExecutionTime = 2.35804 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.5603 727.008 85.1728)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -208.293
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 207.025
+
+Time = 1015s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00057796, Final residual = 2.53215e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00240106, Final residual = 0.000111914, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00317323, Final residual = 0.000135564, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0585037, Final residual = 0.00287794, No Iterations 20
+time step continuity errors : sum local = 1.26468, global = -0.301292, cumulative = -0.209145
+smoothSolver:  Solving for omega, Initial residual = 0.0012594, Final residual = 8.37488e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0167198, Final residual = 0.000745055, No Iterations 1
+ExecutionTime = 2.46089 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.6689 727.402 84.5629)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -207.116
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.67
+
+Time = 1016s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00057615, Final residual = 2.50579e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00237298, Final residual = 0.000111282, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00312126, Final residual = 0.000132659, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0568288, Final residual = 0.00260295, No Iterations 21
+time step continuity errors : sum local = 1.14109, global = -0.293043, cumulative = -0.502188
+smoothSolver:  Solving for omega, Initial residual = 0.00124176, Final residual = 8.19369e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0166806, Final residual = 0.00071765, No Iterations 1
+ExecutionTime = 2.57383 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7249 727.767 84.0853)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -206.442
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.035
+
+Time = 1017s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000575904, Final residual = 2.48106e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00235014, Final residual = 0.000110978, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00307019, Final residual = 0.000129696, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0549153, Final residual = 0.00248063, No Iterations 22
+time step continuity errors : sum local = 1.10273, global = -0.207291, cumulative = -0.709479
+smoothSolver:  Solving for omega, Initial residual = 0.00122019, Final residual = 7.98077e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0159746, Final residual = 0.000699561, No Iterations 1
+ExecutionTime = 2.68122 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7498 728.109 83.7685)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -206.236
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.241
+
+Time = 1018s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000574728, Final residual = 2.45695e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00233521, Final residual = 0.000110975, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00302379, Final residual = 0.000126671, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0533365, Final residual = 0.00252536, No Iterations 22
+time step continuity errors : sum local = 1.1492, global = -0.1253, cumulative = -0.834779
+smoothSolver:  Solving for omega, Initial residual = 0.00119734, Final residual = 7.77043e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0136596, Final residual = 0.000643514, No Iterations 1
+ExecutionTime = 2.7837 s  ClockTime = 2 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7663 728.445 83.6129)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -206.433
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.832
+
+Time = 1019s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000570691, Final residual = 2.43698e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00232728, Final residual = 0.000111419, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00297773, Final residual = 0.000123573, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0521137, Final residual = 0.00257523, No Iterations 8
+time step continuity errors : sum local = 1.19879, global = -0.51344, cumulative = -1.34822
+smoothSolver:  Solving for omega, Initial residual = 0.00117474, Final residual = 7.56374e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0157581, Final residual = 0.000742823, No Iterations 1
+ExecutionTime = 2.87706 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7794 728.799 83.5461)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -206.905
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 204.44
+
+Time = 1020s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000564511, Final residual = 2.42227e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00232577, Final residual = 0.000112126, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00293697, Final residual = 0.00012134, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0515556, Final residual = 0.00253247, No Iterations 8
+time step continuity errors : sum local = 1.18464, global = -0.393501, cumulative = -1.74172
+smoothSolver:  Solving for omega, Initial residual = 0.00114977, Final residual = 7.35137e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0133042, Final residual = 0.000654462, No Iterations 1
+ExecutionTime = 3.19865 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.777 729.172 83.509)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -207.501
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.613
+
+Time = 1021s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000558414, Final residual = 2.40796e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00232499, Final residual = 0.000112789, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00289603, Final residual = 0.00011922, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0511606, Final residual = 0.00227643, No Iterations 10
+time step continuity errors : sum local = 1.07472, global = -0.321498, cumulative = -2.06322
+smoothSolver:  Solving for omega, Initial residual = 0.00112598, Final residual = 7.15454e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0140499, Final residual = 0.000640029, No Iterations 1
+ExecutionTime = 3.28924 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7521 729.587 83.5223)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -208.193
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 206.65
+
+Time = 1022s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000551804, Final residual = 2.39039e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00232932, Final residual = 0.000113513, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00285873, Final residual = 0.000117584, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0520786, Final residual = 0.00254756, No Iterations 13
+time step continuity errors : sum local = 1.18971, global = -0.280586, cumulative = -2.3438
+smoothSolver:  Solving for omega, Initial residual = 0.00110302, Final residual = 6.9712e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0139406, Final residual = 0.000615994, No Iterations 1
+ExecutionTime = 3.37838 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.7057 730.04 83.5805)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -209.045
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 207.699
+
+Time = 1023s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000543575, Final residual = 2.3603e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00233906, Final residual = 0.000114422, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0028349, Final residual = 0.000116976, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0522999, Final residual = 0.00242633, No Iterations 16
+time step continuity errors : sum local = 1.13111, global = -0.224849, cumulative = -2.56865
+smoothSolver:  Solving for omega, Initial residual = 0.00107974, Final residual = 6.80241e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0136101, Final residual = 0.000601014, No Iterations 1
+ExecutionTime = 3.4723 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.6322 730.51 83.6591)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -209.676
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 208.597
+
+Time = 1024s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000538231, Final residual = 2.33141e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00235931, Final residual = 0.000115678, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00282915, Final residual = 0.000116705, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0525223, Final residual = 0.00250144, No Iterations 16
+time step continuity errors : sum local = 1.16016, global = -0.199338, cumulative = -2.76799
+smoothSolver:  Solving for omega, Initial residual = 0.00105699, Final residual = 6.65471e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0121027, Final residual = 0.000561053, No Iterations 1
+ExecutionTime = 3.56635 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.5142 730.981 83.7335)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -210.329
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 209.372
+
+Time = 1025s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000536366, Final residual = 2.30837e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00238666, Final residual = 0.000117043, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.002842, Final residual = 0.000116867, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0520175, Final residual = 0.00248546, No Iterations 8
+time step continuity errors : sum local = 1.16052, global = -0.148478, cumulative = -2.91647
+smoothSolver:  Solving for omega, Initial residual = 0.00103658, Final residual = 6.51936e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.01297, Final residual = 0.000552368, No Iterations 1
+ExecutionTime = 3.65423 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.3446 731.46 83.7863)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -210.65
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 209.937
+
+Time = 1026s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000533891, Final residual = 2.29244e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00240513, Final residual = 0.00011775, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00282128, Final residual = 0.000116754, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0517731, Final residual = 0.00252556, No Iterations 9
+time step continuity errors : sum local = 1.16966, global = -0.0260234, cumulative = -2.94249
+smoothSolver:  Solving for omega, Initial residual = 0.00102497, Final residual = 6.40697e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0134041, Final residual = 0.000553511, No Iterations 1
+ExecutionTime = 3.74949 s  ClockTime = 3 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-12.1181 731.96 83.8293)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -210.549
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 210.424
+
+Time = 1027s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000537284, Final residual = 2.28905e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.002424, Final residual = 0.000118259, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00280574, Final residual = 0.000116827, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0510545, Final residual = 0.00252963, No Iterations 18
+time step continuity errors : sum local = 1.16929, global = 0.0777004, cumulative = -2.86479
+smoothSolver:  Solving for omega, Initial residual = 0.00102142, Final residual = 6.32346e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0133434, Final residual = 0.000537171, No Iterations 1
+ExecutionTime = 3.84819 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.8153 732.454 83.8661)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -210.056
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 210.429
+
+Time = 1028s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000547415, Final residual = 2.2972e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00244563, Final residual = 0.000119136, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00283532, Final residual = 0.000118174, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0510964, Final residual = 0.00249924, No Iterations 10
+time step continuity errors : sum local = 1.14166, global = 0.305358, cumulative = -2.55943
+smoothSolver:  Solving for omega, Initial residual = 0.00101448, Final residual = 6.23397e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.013275, Final residual = 0.000550499, No Iterations 1
+ExecutionTime = 3.93499 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-11.4399 732.923 83.8987)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -209.293
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 210.758
+
+Time = 1029s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000553298, Final residual = 2.31163e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00246257, Final residual = 0.000119471, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00284438, Final residual = 0.000118957, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0510971, Final residual = 0.00249162, No Iterations 23
+time step continuity errors : sum local = 1.12931, global = 0.133146, cumulative = -2.42629
+smoothSolver:  Solving for omega, Initial residual = 0.00100792, Final residual = 6.16928e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0131983, Final residual = 0.000511235, No Iterations 1
+ExecutionTime = 4.05206 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-10.9977 733.37 83.8926)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -208.412
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 209.051
+
+Time = 1030s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000562507, Final residual = 2.33884e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00249796, Final residual = 0.000121041, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00293391, Final residual = 0.000122987, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0525512, Final residual = 0.00236947, No Iterations 10
+time step continuity errors : sum local = 1.04967, global = 0.434136, cumulative = -1.99215
+smoothSolver:  Solving for omega, Initial residual = 0.000999615, Final residual = 6.11199e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.011679, Final residual = 0.000493424, No Iterations 1
+ExecutionTime = 4.37 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-10.4956 733.767 83.849)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -207.505
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 209.589
+
+Time = 1031s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00056551, Final residual = 2.35862e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00251723, Final residual = 0.000121553, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00293825, Final residual = 0.000123131, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0533794, Final residual = 0.00264051, No Iterations 10
+time step continuity errors : sum local = 1.16937, global = 0.446024, cumulative = -1.54613
+smoothSolver:  Solving for omega, Initial residual = 0.000991349, Final residual = 6.07553e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0114367, Final residual = 0.000497187, No Iterations 1
+ExecutionTime = 4.46486 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-9.94578 734.157 83.8295)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -206.594
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 208.735
+
+Time = 1032s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000566689, Final residual = 2.38511e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0025425, Final residual = 0.000122613, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00294482, Final residual = 0.000122811, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0548756, Final residual = 0.00257428, No Iterations 20
+time step continuity errors : sum local = 1.12637, global = 0.240224, cumulative = -1.3059
+smoothSolver:  Solving for omega, Initial residual = 0.000984305, Final residual = 6.04286e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0144768, Final residual = 0.00055678, No Iterations 1
+ExecutionTime = 4.56232 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-9.34758 734.516 83.7911)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -205.615
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 206.768
+
+Time = 1033s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000570095, Final residual = 2.41587e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00258654, Final residual = 0.000124434, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00299241, Final residual = 0.000124096, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0564976, Final residual = 0.00280901, No Iterations 17
+time step continuity errors : sum local = 1.20608, global = 0.232843, cumulative = -1.07306
+smoothSolver:  Solving for omega, Initial residual = 0.000977508, Final residual = 6.01994e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.014641, Final residual = 0.000573508, No Iterations 1
+ExecutionTime = 4.65541 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-8.70888 734.804 83.7125)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -204.586
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 205.703
+
+Time = 1034s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000572634, Final residual = 2.45646e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00261933, Final residual = 0.000125969, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00302696, Final residual = 0.000124636, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0580716, Final residual = 0.00270865, No Iterations 8
+time step continuity errors : sum local = 1.15214, global = 0.295134, cumulative = -0.777925
+smoothSolver:  Solving for omega, Initial residual = 0.000971337, Final residual = 5.97707e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0142648, Final residual = 0.000558143, No Iterations 1
+ExecutionTime = 4.73982 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-8.00707 735.011 83.676)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -203.351
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 204.767
+
+Time = 1035s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000575357, Final residual = 2.50619e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00263254, Final residual = 0.000126969, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00302369, Final residual = 0.000123725, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0592116, Final residual = 0.00275233, No Iterations 9
+time step continuity errors : sum local = 1.17279, global = 0.362358, cumulative = -0.415567
+smoothSolver:  Solving for omega, Initial residual = 0.000965966, Final residual = 5.92974e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0140584, Final residual = 0.000554257, No Iterations 1
+ExecutionTime = 4.8263 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-7.20383 735.126 83.7474)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -201.653
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 203.393
+
+Time = 1036s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000579065, Final residual = 2.54825e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00265057, Final residual = 0.000127861, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00301674, Final residual = 0.000123294, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.061023, Final residual = 0.00297972, No Iterations 16
+time step continuity errors : sum local = 1.25814, global = 0.419742, cumulative = 0.00417482
+smoothSolver:  Solving for omega, Initial residual = 0.000960687, Final residual = 5.87805e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0149028, Final residual = 0.000553853, No Iterations 1
+ExecutionTime = 4.92061 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-6.27335 735.119 83.9344)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -199.655
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 201.67
+
+Time = 1037s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000582445, Final residual = 2.58705e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00267356, Final residual = 0.000129084, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00303598, Final residual = 0.00012489, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0624546, Final residual = 0.00309478, No Iterations 19
+time step continuity errors : sum local = 1.2952, global = 0.339612, cumulative = 0.343787
+smoothSolver:  Solving for omega, Initial residual = 0.000957399, Final residual = 5.84862e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0160028, Final residual = 0.000611037, No Iterations 1
+ExecutionTime = 5.01987 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-5.19966 734.984 84.2215)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -197.415
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 199.045
+
+Time = 1038s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000586282, Final residual = 2.61094e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00269892, Final residual = 0.00013043, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00308418, Final residual = 0.000128096, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0636392, Final residual = 0.00313645, No Iterations 9
+time step continuity errors : sum local = 1.29686, global = 0.612142, cumulative = 0.955929
+smoothSolver:  Solving for omega, Initial residual = 0.000952011, Final residual = 5.82839e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0146053, Final residual = 0.00058222, No Iterations 1
+ExecutionTime = 5.11185 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-3.98198 734.71 84.6353)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -195.002
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 197.94
+
+Time = 1039s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000586599, Final residual = 2.60165e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00271695, Final residual = 0.000131476, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00308734, Final residual = 0.000128593, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0644655, Final residual = 0.0030428, No Iterations 24
+time step continuity errors : sum local = 1.24364, global = 0.0758509, cumulative = 1.03178
+smoothSolver:  Solving for omega, Initial residual = 0.000952362, Final residual = 5.87152e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0159897, Final residual = 0.000631293, No Iterations 1
+ExecutionTime = 5.22107 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-2.64563 734.294 85.1435)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -192.402
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 192.766
+
+Time = 1040s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000590898, Final residual = 2.62091e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00274783, Final residual = 0.000133202, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0031985, Final residual = 0.000133393, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0672211, Final residual = 0.00316445, No Iterations 9
+time step continuity errors : sum local = 1.25022, global = 0.50641, cumulative = 1.53819
+smoothSolver:  Solving for omega, Initial residual = 0.000957894, Final residual = 5.92724e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.013946, Final residual = 0.000567482, No Iterations 1
+ExecutionTime = 5.52324 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-1.19938 733.685 85.7527)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -189.739
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 192.17
+
+Time = 1041s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000593192, Final residual = 2.62218e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00276778, Final residual = 0.000134111, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00319301, Final residual = 0.000133005, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0675196, Final residual = 0.00328235, No Iterations 9
+time step continuity errors : sum local = 1.28303, global = 0.451886, cumulative = 1.99008
+smoothSolver:  Solving for omega, Initial residual = 0.000970383, Final residual = 6.00095e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.01307, Final residual = 0.00056398, No Iterations 1
+ExecutionTime = 5.61813 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.384226 732.873 86.5501)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -186.993
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 189.162
+
+Time = 1042s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000598022, Final residual = 2.61254e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00279295, Final residual = 0.000135219, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0031852, Final residual = 0.000132367, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0671251, Final residual = 0.0031156, No Iterations 11
+time step continuity errors : sum local = 1.20911, global = 0.453117, cumulative = 2.44319
+smoothSolver:  Solving for omega, Initial residual = 0.000989781, Final residual = 6.09542e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.016666, Final residual = 0.000673423, No Iterations 1
+ExecutionTime = 5.70999 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (2.09503 731.818 87.5428)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -184.227
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 186.402
+
+Time = 1043s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000600034, Final residual = 2.60424e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00282038, Final residual = 0.000136228, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00320012, Final residual = 0.000132324, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0666264, Final residual = 0.00323246, No Iterations 13
+time step continuity errors : sum local = 1.24508, global = 0.461454, cumulative = 2.90465
+smoothSolver:  Solving for omega, Initial residual = 0.00100872, Final residual = 6.18871e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0175407, Final residual = 0.000703806, No Iterations 1
+ExecutionTime = 5.80279 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (3.9089 730.49 88.736)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -181.488
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 183.703
+
+Time = 1044s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000600767, Final residual = 2.59545e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00284628, Final residual = 0.000137099, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00323174, Final residual = 0.000132948, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0663368, Final residual = 0.00326884, No Iterations 23
+time step continuity errors : sum local = 1.24588, global = 0.150222, cumulative = 3.05487
+smoothSolver:  Solving for omega, Initial residual = 0.00102987, Final residual = 6.30874e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0173294, Final residual = 0.000678979, No Iterations 1
+ExecutionTime = 5.90523 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (5.80476 728.86 90.1048)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -178.801
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 179.522
+
+Time = 1045s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000600074, Final residual = 2.58027e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00288592, Final residual = 0.000138704, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0033339, Final residual = 0.000137271, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0678024, Final residual = 0.0030796, No Iterations 8
+time step continuity errors : sum local = 1.14717, global = 0.244475, cumulative = 3.29934
+smoothSolver:  Solving for omega, Initial residual = 0.00104835, Final residual = 6.44997e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0154686, Final residual = 0.000632048, No Iterations 1
+ExecutionTime = 5.99532 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (7.75283 726.898 91.6396)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -176.233
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 177.406
+
+Time = 1046s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000592391, Final residual = 2.54521e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0029019, Final residual = 0.000139306, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00334282, Final residual = 0.000137654, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0688867, Final residual = 0.00327193, No Iterations 8
+time step continuity errors : sum local = 1.21275, global = 0.175218, cumulative = 3.47456
+smoothSolver:  Solving for omega, Initial residual = 0.00106715, Final residual = 6.59846e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0139238, Final residual = 0.000601874, No Iterations 1
+ExecutionTime = 6.09137 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (9.71645 724.603 93.3491)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -173.637
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 174.478
+
+Time = 1047s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000584927, Final residual = 2.51907e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00291795, Final residual = 0.000140074, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00335066, Final residual = 0.00013827, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0702483, Final residual = 0.0032383, No Iterations 9
+time step continuity errors : sum local = 1.19713, global = 0.140705, cumulative = 3.61527
+smoothSolver:  Solving for omega, Initial residual = 0.00108542, Final residual = 6.74909e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0159974, Final residual = 0.000643744, No Iterations 1
+ExecutionTime = 6.18172 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (11.6663 721.998 95.2239)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -171.074
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 171.75
+
+Time = 1048s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00057629, Final residual = 2.5035e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0029227, Final residual = 0.000140485, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00334932, Final residual = 0.000138441, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.071257, Final residual = 0.00355552, No Iterations 9
+time step continuity errors : sum local = 1.31208, global = 0.130021, cumulative = 3.74529
+smoothSolver:  Solving for omega, Initial residual = 0.00109958, Final residual = 6.88846e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.014116, Final residual = 0.000611721, No Iterations 1
+ExecutionTime = 6.2746 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (13.5744 719.121 97.2452)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -168.523
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 169.147
+
+Time = 1049s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.000565255, Final residual = 2.48786e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00291933, Final residual = 0.00014041, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00333337, Final residual = 0.000137582, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0721014, Final residual = 0.0035001, No Iterations 10
+time step continuity errors : sum local = 1.28999, global = 0.149961, cumulative = 3.89525
+smoothSolver:  Solving for omega, Initial residual = 0.00111069, Final residual = 7.04068e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.017408, Final residual = 0.000707654, No Iterations 1
+ExecutionTime = 6.36997 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (15.4118 716.018 99.3817)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -166.042
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 166.762
+
+Time = 1050s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.00055548, Final residual = 2.48153e-05, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.00291019, Final residual = 0.000140105, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.00329719, Final residual = 0.000135828, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0725786, Final residual = 0.00332688, No Iterations 11
+time step continuity errors : sum local = 1.22666, global = 0.1769, cumulative = 4.07215
+smoothSolver:  Solving for omega, Initial residual = 0.00111784, Final residual = 7.17987e-05, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.017356, Final residual = 0.000717788, No Iterations 1
+ExecutionTime = 6.68922 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (17.1499 712.748 101.593)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = -163.685
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 164.534
+
+End
+

@@ -1,0 +1,27 @@
+# Log Index (baseCase)
+
+- day2/01_blockMesh.log: blockMesh run
+- day2/02_checkMesh.log: checkMesh run
+- day3/01_createZones.log: createZones -clear run
+- day3/02_checkMesh.log: checkMesh after zone creation
+- day4/01_foamRun_initial.log: first Day4 foamRun with propellerDisk loaded
+- day4/02_foamPostProcess_graphUniform.log: explicit foamPostProcess graphUniform run
+- day4/03_foamRun_seed_minus0p5.log: Day4 fix run with seed U=-0.5
+- day4/04_foamRun_normal_flip.log: Day4 run after propeller normal sign update
+- day5/01_foamRun_ref_0to300.log: Day5 baseline run (0->300)
+- day5/02_foamRun_continue_300to500_diverged.log: first continuation attempt (diverged near 500)
+- day5/03_foamRun_continue_300to1000_stabilized.log: stabilized continuation run (reached 1000)
+- day5/05_foamRun_diag_1000to1050.log: diagnostic run with Uavg/phi monitors (1000->1050)
+- day5/06_foamRun_parse_check.log: parse/startup check after outOfBounds warning setting
+- day5/07_foamRun_ref_reset_0to300.log: reset run after pressure BC tweak (farField fixedValue 0); J worsened
+- day5/08_blockMesh_domain_expand.log: blockMesh on expanded domain
+- day5/09_createZones_domain_expand.log: createZones rerun after expanded mesh
+- day5/10_checkMesh_domain_expand.log: checkMesh on expanded mesh
+- day5/11_foamRun_ref_domain_expand_0to120.log: expanded-domain ref attempt with unstable oscillation
+- day5/12_foamRun_ref_domain_expand_curveScaled_0to120.log: expanded-domain run after curve scaling/low-J extension, completed to 120
+- day5/nScan/foamRun_n*_0to40.log: B-baseline n-scan short runs (n=6,8,10,15,26)
+- day5/nScan/diag_n*.txt: J/Jcorr bounds + T/Q variability diagnostics per n
+- day5/nScan/ref_n*.{txt,json,csv}: extracted per-n reference metrics/status
+- day5/13_foamRun_Bbaseline_n6_0to120.log: B-baseline long run (n=6, original curve) from 0 to 120
+- day5/13_diag_Bbaseline_n6_window50.txt: diagnostics summary (window 50) for the long run
+- day5/13_ref_Bbaseline_n6_window100.txt: extracted metrics/status (window 100) for the long run

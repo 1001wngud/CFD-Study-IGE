@@ -1,0 +1,1130 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun
+Date   : Feb 26 2026
+Time   : 16:23:45
+Host   : "JOO-DESKTOP"
+PID    : 54679
+I/O    : uncollated
+Case   : /home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/baseCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type RAS
+    Selecting RAS turbulence model kOmegaSST
+No MRF models present
+
+Selecting patchDistMethod meshWave
+Creating fvModels from "constant/fvModels"
+
+Selecting finite volume model type propellerDisk
+    Name: diskSource
+
+SIMPLE: Convergence criteria found
+        p: tolerance 0.0001
+        U: tolerance 1e-05
+        k: tolerance 1e-05
+        omega: tolerance 1e-05
+
+
+SIMPLE: Operating solver in steady-state mode with 1 outer corrector
+SIMPLE: Operating solver in SIMPLE mode
+
+
+
+Starting time loop
+
+Reading set description:
+    line
+
+volFieldValue Uavg_propeller read:
+    number of cells = 104
+    volume = 0.0126953
+    operation = volAverage
+
+surfaceFieldValue phi_farField read:
+    number of faces = 24576
+    area = 48
+    operation = orientedSum
+
+surfaceFieldValue phi_top read:
+    number of faces = 4096
+    area = 16
+    operation = orientedSum
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0 0 -0.01)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 0
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = 0
+
+Time = 1s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (0.00333333) underflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-97.489) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 0.0295823, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 1, Final residual = 0.0295823, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 0.0301261, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 1, Final residual = 0.0448508, No Iterations 28
+time step continuity errors : sum local = 0.035926, global = -0.00873833, cumulative = -0.00873833
+smoothSolver:  Solving for omega, Initial residual = 0.100035, Final residual = 0.0045417, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 1, Final residual = 0.0466913, No Iterations 1
+ExecutionTime = 3.78462 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (-0.00155262 -0.00130399 -83.1805)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 0.11858
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -0.53802
+
+Time = 2s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (27.7268) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (27.7256) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.255649, Final residual = 0.012671, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.255649, Final residual = 0.0124165, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.263669, Final residual = 0.0133338, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.972811, Final residual = 0.04498, No Iterations 38
+time step continuity errors : sum local = 0.031087, global = -0.00598708, cumulative = -0.0147254
+smoothSolver:  Solving for omega, Initial residual = 0.0311503, Final residual = 0.00163237, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0931819, Final residual = 0.00491043, No Iterations 1
+ExecutionTime = 4.67806 s  ClockTime = 4 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0333472 -0.00220923 -57.1939)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 0.809602
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.09698
+
+Time = 3s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (19.0646) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (19.0628) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.222258, Final residual = 0.01005, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.222177, Final residual = 0.00975607, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.231276, Final residual = 0.00966227, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.10029, Final residual = 0.00492411, No Iterations 37
+time step continuity errors : sum local = 0.0244529, global = -0.00342909, cumulative = -0.0181545
+smoothSolver:  Solving for omega, Initial residual = 0.0406044, Final residual = 0.00215384, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.113588, Final residual = 0.00598164, No Iterations 1
+ExecutionTime = 5.48601 s  ClockTime = 5 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0446718 -0.0226495 -34.9074)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 0.84729
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.01189
+
+Time = 4s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (11.6358) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (11.6328) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.210165, Final residual = 0.0106081, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.209981, Final residual = 0.0103932, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.214259, Final residual = 0.009438, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0455215, Final residual = 0.00213187, No Iterations 30
+time step continuity errors : sum local = 0.0193752, global = -0.00609371, cumulative = -0.0242482
+smoothSolver:  Solving for omega, Initial residual = 0.0442755, Final residual = 0.00230464, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.134944, Final residual = 0.00700764, No Iterations 1
+ExecutionTime = 6.24288 s  ClockTime = 6 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0505765 -0.0520315 -21.5323)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 0.845958
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.13846
+
+Time = 5s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (7.17744) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (7.17254) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.158644, Final residual = 0.00814876, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.158524, Final residual = 0.00796007, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.179119, Final residual = 0.00795989, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0356933, Final residual = 0.00176659, No Iterations 28
+time step continuity errors : sum local = 0.0274298, global = 0.00866743, cumulative = -0.0155808
+smoothSolver:  Solving for omega, Initial residual = 0.0507368, Final residual = 0.00257821, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.158139, Final residual = 0.00813987, No Iterations 1
+ExecutionTime = 7.05698 s  ClockTime = 7 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0797528 -0.0961772 -17.3444)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.46923
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.05319
+
+Time = 6s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.78146) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.77539) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.111131, Final residual = 0.00572666, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.111199, Final residual = 0.00560102, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.125916, Final residual = 0.00580434, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0269358, Final residual = 0.00132009, No Iterations 31
+time step continuity errors : sum local = 0.0312393, global = 0.00982886, cumulative = -0.00575192
+smoothSolver:  Solving for omega, Initial residual = 0.0544804, Final residual = 0.0027279, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.18964, Final residual = 0.00973213, No Iterations 1
+ExecutionTime = 7.88453 s  ClockTime = 8 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0986342 -0.0946963 -17.9275)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.57086
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.09908
+
+Time = 7s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.97585) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.96997) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0777787, Final residual = 0.00394216, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0779141, Final residual = 0.00391988, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0724224, Final residual = 0.00347878, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0184805, Final residual = 0.000920978, No Iterations 32
+time step continuity errors : sum local = 0.0298396, global = 0.0112507, cumulative = 0.00549875
+smoothSolver:  Solving for omega, Initial residual = 0.0547442, Final residual = 0.00274996, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.180868, Final residual = 0.00929844, No Iterations 1
+ExecutionTime = 8.7279 s  ClockTime = 8 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.11723 -0.0709216 -18.7311)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.67854
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.13851
+
+Time = 8s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (6.2437) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (6.23807) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0874365, Final residual = 0.00423609, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0876703, Final residual = 0.00431442, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0583091, Final residual = 0.00251874, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0119484, Final residual = 0.000567978, No Iterations 32
+time step continuity errors : sum local = 0.0231954, global = 0.00974991, cumulative = 0.0152487
+smoothSolver:  Solving for omega, Initial residual = 0.0512384, Final residual = 0.00260933, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.152094, Final residual = 0.00781017, No Iterations 1
+ExecutionTime = 9.53478 s  ClockTime = 9 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.121317 -0.0307921 -17.9244)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.65422
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.18623
+
+Time = 9s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.97481) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.96893) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.10707, Final residual = 0.00518931, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.107261, Final residual = 0.00532873, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0628338, Final residual = 0.00257188, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0098235, Final residual = 0.00042554, No Iterations 28
+time step continuity errors : sum local = 0.0176468, global = 0.00136573, cumulative = 0.0166144
+smoothSolver:  Solving for omega, Initial residual = 0.045588, Final residual = 0.00235068, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.123525, Final residual = 0.00632136, No Iterations 1
+ExecutionTime = 10.3309 s  ClockTime = 10 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.115006 0.00882235 -15.4591)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.3928
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.32724
+
+Time = 10s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.15303) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (5.14621) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.114423, Final residual = 0.00561555, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.114506, Final residual = 0.00576496, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.059063, Final residual = 0.00240612, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0137623, Final residual = 0.00067892, No Iterations 21
+time step continuity errors : sum local = 0.020462, global = -0.00586371, cumulative = 0.0107507
+smoothSolver:  Solving for omega, Initial residual = 0.0415512, Final residual = 0.00216967, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.103263, Final residual = 0.00525026, No Iterations 1
+ExecutionTime = 11.0801 s  ClockTime = 11 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.102403 0.0384236 -12.2187)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.02051
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.30197
+
+Time = 11s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (4.0729) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (4.06428) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.103721, Final residual = 0.00509638, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.103724, Final residual = 0.0052117, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0480365, Final residual = 0.00201038, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0149377, Final residual = 0.000720925, No Iterations 29
+time step continuity errors : sum local = 0.0194698, global = -0.00576899, cumulative = 0.0049817
+smoothSolver:  Solving for omega, Initial residual = 0.0379371, Final residual = 0.00200338, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0880222, Final residual = 0.00445509, No Iterations 1
+ExecutionTime = 11.884 s  ClockTime = 12 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0869835 0.0536297 -9.25472)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.09638
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.37329
+
+Time = 12s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (3.08491) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (3.07352) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0851674, Final residual = 0.00415385, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0850724, Final residual = 0.00419045, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0444054, Final residual = 0.00197753, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0196477, Final residual = 0.000910332, No Iterations 30
+time step continuity errors : sum local = 0.0164946, global = -0.00443685, cumulative = 0.000544845
+smoothSolver:  Solving for omega, Initial residual = 0.0354366, Final residual = 0.00188653, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.078565, Final residual = 0.00394761, No Iterations 1
+ExecutionTime = 12.7024 s  ClockTime = 12 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0713745 0.0538339 -7.32024)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.13131
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.34428
+
+Time = 13s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.44008) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.42569) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0704469, Final residual = 0.00338885, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.070315, Final residual = 0.00335708, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0504769, Final residual = 0.00226697, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0246559, Final residual = 0.00115786, No Iterations 28
+time step continuity errors : sum local = 0.0145622, global = -0.00240941, cumulative = -0.00186457
+smoothSolver:  Solving for omega, Initial residual = 0.0334424, Final residual = 0.00179182, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.072177, Final residual = 0.00360367, No Iterations 1
+ExecutionTime = 13.4693 s  ClockTime = 13 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0587754 0.0429958 -6.65188)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.17307
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.28873
+
+Time = 14s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.21729) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.20146) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0633747, Final residual = 0.00302244, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0632826, Final residual = 0.00296743, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0556442, Final residual = 0.00241494, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0306603, Final residual = 0.00145271, No Iterations 21
+time step continuity errors : sum local = 0.0141984, global = 0.000944145, cumulative = -0.000920421
+smoothSolver:  Solving for omega, Initial residual = 0.0318152, Final residual = 0.00171354, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0674673, Final residual = 0.00334927, No Iterations 1
+ExecutionTime = 14.224 s  ClockTime = 14 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0521556 0.0277971 -6.97625)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.24812
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.2028
+
+Time = 15s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.32542) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.31032) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0576575, Final residual = 0.00278609, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0575369, Final residual = 0.00274294, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0544223, Final residual = 0.00231319, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0262422, Final residual = 0.00130421, No Iterations 23
+time step continuity errors : sum local = 0.0151327, global = 0.00601645, cumulative = 0.00509603
+smoothSolver:  Solving for omega, Initial residual = 0.0298652, Final residual = 0.00162032, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0627145, Final residual = 0.00309271, No Iterations 1
+ExecutionTime = 14.9738 s  ClockTime = 15 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0521652 0.0147647 -7.70799)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.53908
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.25029
+
+Time = 16s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.56933) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.55566) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0517461, Final residual = 0.00254717, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0515867, Final residual = 0.00251805, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0462008, Final residual = 0.00196107, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0169875, Final residual = 0.000770388, No Iterations 28
+time step continuity errors : sum local = 0.0133841, global = 0.00353099, cumulative = 0.00862701
+smoothSolver:  Solving for omega, Initial residual = 0.0283509, Final residual = 0.00154833, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0597505, Final residual = 0.00293257, No Iterations 1
+ExecutionTime = 15.8044 s  ClockTime = 16 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0567267 0.00738714 -8.23114)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.40968
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.24019
+
+Time = 17s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.74371) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.73092) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0499147, Final residual = 0.00246885, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0497945, Final residual = 0.00244387, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0368897, Final residual = 0.00159477, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0116714, Final residual = 0.000567023, No Iterations 28
+time step continuity errors : sum local = 0.0135917, global = 0.00218503, cumulative = 0.010812
+smoothSolver:  Solving for omega, Initial residual = 0.0271219, Final residual = 0.00148621, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0566183, Final residual = 0.00276241, No Iterations 1
+ExecutionTime = 16.6247 s  ClockTime = 16 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0618795 0.00567739 -8.12989)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.36943
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.26455
+
+Time = 18s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.70996) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.69701) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0545599, Final residual = 0.00268167, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0544947, Final residual = 0.00265505, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0313177, Final residual = 0.00139787, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00919432, Final residual = 0.000395291, No Iterations 27
+time step continuity errors : sum local = 0.0113922, global = -2.51196e-05, cumulative = 0.0107869
+smoothSolver:  Solving for omega, Initial residual = 0.0261538, Final residual = 0.0014303, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.053674, Final residual = 0.00260256, No Iterations 1
+ExecutionTime = 17.4117 s  ClockTime = 17 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0638818 0.0075395 -7.29277)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.31242
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.31363
+
+Time = 19s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.43092) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (2.41648) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0580913, Final residual = 0.00284674, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0580481, Final residual = 0.00282578, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0302175, Final residual = 0.00136128, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00881569, Final residual = 0.000426456, No Iterations 20
+time step continuity errors : sum local = 0.0130491, global = 0.00337447, cumulative = 0.0141614
+smoothSolver:  Solving for omega, Initial residual = 0.0252051, Final residual = 0.00137806, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.050843, Final residual = 0.00244509, No Iterations 1
+ExecutionTime = 18.1267 s  ClockTime = 18 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0612132 0.010652 -5.8811)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.46627
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.30429
+
+Time = 20s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (1.96037) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (1.94245) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0571138, Final residual = 0.00281746, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0570678, Final residual = 0.00280488, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0302351, Final residual = 0.00136982, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00906272, Final residual = 0.00040117, No Iterations 18
+time step continuity errors : sum local = 0.0121391, global = 0.00210465, cumulative = 0.016266
+smoothSolver:  Solving for omega, Initial residual = 0.0245943, Final residual = 0.00134679, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0490137, Final residual = 0.00234035, No Iterations 1
+ExecutionTime = 19.8787 s  ClockTime = 20 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0549487 0.0131936 -4.21054)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.39125
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.29023
+
+Time = 21s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (1.40351) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (1.3785) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0531814, Final residual = 0.00266538, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0531463, Final residual = 0.00265677, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0311432, Final residual = 0.00141846, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0105068, Final residual = 0.00051293, No Iterations 18
+time step continuity errors : sum local = 0.0134462, global = -0.00189417, cumulative = 0.0143719
+smoothSolver:  Solving for omega, Initial residual = 0.024006, Final residual = 0.00131972, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0476743, Final residual = 0.00226178, No Iterations 1
+ExecutionTime = 20.6767 s  ClockTime = 20 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0480892 0.0143962 -2.68043)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.20626
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.29718
+
+Time = 22s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (0.893475) overflow"
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (0.854175) overflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0487108, Final residual = 0.00249232, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0486982, Final residual = 0.00248113, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0329422, Final residual = 0.00151025, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0117998, Final residual = 0.000573753, No Iterations 20
+time step continuity errors : sum local = 0.0127594, global = -0.00396168, cumulative = 0.0104102
+smoothSolver:  Solving for omega, Initial residual = 0.0234266, Final residual = 0.00129067, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.046387, Final residual = 0.00218688, No Iterations 1
+ExecutionTime = 21.3946 s  ClockTime = 21 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0401601 0.00795179 -1.69979)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.10538
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.29554
+
+Time = 23s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0452191, Final residual = 0.0023522, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0452034, Final residual = 0.00233532, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0340709, Final residual = 0.00157025, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0128484, Final residual = 0.000624134, No Iterations 18
+time step continuity errors : sum local = 0.0119675, global = -0.00401045, cumulative = 0.00639973
+smoothSolver:  Solving for omega, Initial residual = 0.0228422, Final residual = 0.00126111, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0452142, Final residual = 0.00210632, No Iterations 1
+ExecutionTime = 22.0632 s  ClockTime = 22 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0538095 0.0258816 -1.68174)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.11967
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.31217
+
+Time = 24s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0428954, Final residual = 0.00225684, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0428646, Final residual = 0.00223513, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0336986, Final residual = 0.00156232, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0133535, Final residual = 0.000627861, No Iterations 13
+time step continuity errors : sum local = 0.0110984, global = -0.00445591, cumulative = 0.00194382
+smoothSolver:  Solving for omega, Initial residual = 0.0222539, Final residual = 0.00123151, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.043559, Final residual = 0.00202902, No Iterations 1
+ExecutionTime = 22.6909 s  ClockTime = 22 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.00120858 0.0368532 -1.8292)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.11327
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.32715
+
+Time = 25s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0414127, Final residual = 0.0021894, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0413499, Final residual = 0.00216976, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0321185, Final residual = 0.001496, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0129678, Final residual = 0.000622562, No Iterations 12
+time step continuity errors : sum local = 0.0111034, global = -0.00156531, cumulative = 0.000378515
+smoothSolver:  Solving for omega, Initial residual = 0.0217258, Final residual = 0.00120541, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.042271, Final residual = 0.0019752, No Iterations 1
+ExecutionTime = 23.3496 s  ClockTime = 23 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0140897 0.0234649 -2.19016)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.2397
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.31484
+
+Time = 26s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0399933, Final residual = 0.00212549, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0399102, Final residual = 0.00210361, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0297324, Final residual = 0.00139532, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0118853, Final residual = 0.000583573, No Iterations 18
+time step continuity errors : sum local = 0.011188, global = 0.0046951, cumulative = 0.00507362
+smoothSolver:  Solving for omega, Initial residual = 0.0212813, Final residual = 0.00118389, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0402398, Final residual = 0.00188335, No Iterations 1
+ExecutionTime = 24.0305 s  ClockTime = 24 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.015201 0.00583248 -2.38948)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.53804
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.31268
+
+Time = 27s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0389138, Final residual = 0.00206455, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0388496, Final residual = 0.00204591, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0276289, Final residual = 0.00130972, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0101079, Final residual = 0.000459168, No Iterations 22
+time step continuity errors : sum local = 0.0100694, global = 0.00280536, cumulative = 0.00787898
+smoothSolver:  Solving for omega, Initial residual = 0.0209522, Final residual = 0.00116744, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0390406, Final residual = 0.001823, No Iterations 1
+ExecutionTime = 24.7982 s  ClockTime = 25 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0299775 0.00163002 -2.36078)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.46076
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.3261
+
+Time = 28s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0379625, Final residual = 0.00201464, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0379246, Final residual = 0.00199693, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.026415, Final residual = 0.00126798, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00893581, Final residual = 0.000418269, No Iterations 22
+time step continuity errors : sum local = 0.0101947, global = 0.00235086, cumulative = 0.0102298
+smoothSolver:  Solving for omega, Initial residual = 0.0205799, Final residual = 0.00114846, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0379356, Final residual = 0.00176693, No Iterations 1
+ExecutionTime = 25.5232 s  ClockTime = 25 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0379863 0.00674019 -2.13757)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.44952
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.33668
+
+Time = 29s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0369242, Final residual = 0.00196848, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.036917, Final residual = 0.00195596, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0263791, Final residual = 0.0012773, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00824975, Final residual = 0.000410897, No Iterations 18
+time step continuity errors : sum local = 0.0107222, global = 0.00558818, cumulative = 0.015818
+smoothSolver:  Solving for omega, Initial residual = 0.0202075, Final residual = 0.00112986, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0368419, Final residual = 0.00171092, No Iterations 1
+ExecutionTime = 26.2198 s  ClockTime = 26 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0574927 0.000967155 -1.87919)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.60265
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.33442
+
+Time = 30s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0356357, Final residual = 0.00192127, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0356481, Final residual = 0.0019134, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0271434, Final residual = 0.00132217, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00825775, Final residual = 0.000381884, No Iterations 17
+time step continuity errors : sum local = 0.00967903, global = 0.00457396, cumulative = 0.020392
+smoothSolver:  Solving for omega, Initial residual = 0.0199029, Final residual = 0.00111503, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0362078, Final residual = 0.00167942, No Iterations 1
+ExecutionTime = 26.9764 s  ClockTime = 27 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0793882 0.0181972 -1.51797)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.5791
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.35955
+
+Time = 31s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0342716, Final residual = 0.00187684, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0343063, Final residual = 0.00187268, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0282697, Final residual = 0.0013866, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.009022, Final residual = 0.000419177, No Iterations 16
+time step continuity errors : sum local = 0.00945436, global = 0.00293121, cumulative = 0.0233232
+smoothSolver:  Solving for omega, Initial residual = 0.0196308, Final residual = 0.00110217, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0357448, Final residual = 0.00165407, No Iterations 1
+ExecutionTime = 27.7096 s  ClockTime = 27 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0804164 0.041419 -1.3039)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.53124
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.39054
+
+Time = 32s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-0.0397303) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.033128, Final residual = 0.00183977, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.033174, Final residual = 0.00183915, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0293478, Final residual = 0.00145136, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00936222, Final residual = 0.000449023, No Iterations 15
+time step continuity errors : sum local = 0.0093868, global = 0.00124854, cumulative = 0.0245717
+smoothSolver:  Solving for omega, Initial residual = 0.0193885, Final residual = 0.00108964, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0355975, Final residual = 0.00163731, No Iterations 1
+ExecutionTime = 28.3716 s  ClockTime = 28 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0757587 0.0554881 -1.09987)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.47988
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.41995
+
+Time = 33s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-0.269578) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0323033, Final residual = 0.0018109, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0323426, Final residual = 0.00181465, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.030197, Final residual = 0.00151548, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00976251, Final residual = 0.000435369, No Iterations 15
+time step continuity errors : sum local = 0.00852393, global = -0.000291386, cumulative = 0.0242803
+smoothSolver:  Solving for omega, Initial residual = 0.0191589, Final residual = 0.00107855, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0355828, Final residual = 0.0016364, No Iterations 1
+ExecutionTime = 29.0004 s  ClockTime = 29 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0646573 0.053013 -0.993681)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.4292
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.44318
+
+Time = 34s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-0.413726) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0316969, Final residual = 0.00179015, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0317387, Final residual = 0.001799, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0307841, Final residual = 0.00157463, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.0101221, Final residual = 0.00049361, No Iterations 14
+time step continuity errors : sum local = 0.00912014, global = -0.000629992, cumulative = 0.0236504
+smoothSolver:  Solving for omega, Initial residual = 0.0189519, Final residual = 0.00106775, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0358371, Final residual = 0.00163599, No Iterations 1
+ExecutionTime = 29.6866 s  ClockTime = 29 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0579901 0.040649 -1.05752)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.43047
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.46071
+
+Time = 35s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-0.324788) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0312535, Final residual = 0.00177753, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0312775, Final residual = 0.00178982, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0314889, Final residual = 0.00164466, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00989018, Final residual = 0.000440093, No Iterations 15
+time step continuity errors : sum local = 0.0081166, global = -0.000939475, cumulative = 0.0227109
+smoothSolver:  Solving for omega, Initial residual = 0.0187844, Final residual = 0.00105864, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0359561, Final residual = 0.00164323, No Iterations 1
+ExecutionTime = 30.3619 s  ClockTime = 30 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0509827 0.0202027 -1.2797)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.42841
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.4735
+
+Time = 36s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (-0.0644488) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0308529, Final residual = 0.00177086, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0308855, Final residual = 0.00178812, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0324954, Final residual = 0.00173878, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00944386, Final residual = 0.000465193, No Iterations 15
+time step continuity errors : sum local = 0.00882219, global = -0.000410185, cumulative = 0.0223007
+smoothSolver:  Solving for omega, Initial residual = 0.0186382, Final residual = 0.00104996, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0364511, Final residual = 0.00166243, No Iterations 1
+ExecutionTime = 31.0851 s  ClockTime = 31 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0488506 0.00609752 -1.51023)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.46073
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.48042
+
+Time = 37s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0305386, Final residual = 0.00177289, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0305725, Final residual = 0.00179326, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0337834, Final residual = 0.00185171, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00908992, Final residual = 0.000417836, No Iterations 16
+time step continuity errors : sum local = 0.00820349, global = -4.44946e-05, cumulative = 0.0222562
+smoothSolver:  Solving for omega, Initial residual = 0.018547, Final residual = 0.00104375, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0370899, Final residual = 0.00167842, No Iterations 1
+ExecutionTime = 31.7773 s  ClockTime = 32 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0500146 0.00120284 -1.61551)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.47729
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.47943
+
+Time = 38s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.030423, Final residual = 0.00178361, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0304619, Final residual = 0.00180711, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0353258, Final residual = 0.00198107, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00861033, Final residual = 0.000406113, No Iterations 16
+time step continuity errors : sum local = 0.00851747, global = 0.000265227, cumulative = 0.0225214
+smoothSolver:  Solving for omega, Initial residual = 0.0185069, Final residual = 0.00103909, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0375704, Final residual = 0.00170445, No Iterations 1
+ExecutionTime = 32.4204 s  ClockTime = 32 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0522919 0.000820519 -1.54699)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.48952
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.47679
+
+Time = 39s
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0305656, Final residual = 0.00180586, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0306091, Final residual = 0.00183321, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0370143, Final residual = 0.00211855, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00894569, Final residual = 0.000432122, No Iterations 16
+time step continuity errors : sum local = 0.0088607, global = 9.13655e-05, cumulative = 0.0226128
+smoothSolver:  Solving for omega, Initial residual = 0.0185245, Final residual = 0.0010358, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.0383061, Final residual = 0.00173039, No Iterations 1
+ExecutionTime = 33.099 s  ClockTime = 33 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0531822 0.00335852 -1.44635)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.47751
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.47313
+
+Time = 40s
+
+--> FOAM Warning : 
+    From function void Foam::Function1s::Table<Type>::checkX(Foam::scalar) const [with Type = Foam::Vector2D<double>; Foam::scalar = double]
+    in file lnInclude/Table.C at line 107
+    "value (0.0955012) underflow"
+
+smoothSolver:  Solving for Ux, Initial residual = 0.0309047, Final residual = 0.00183595, No Iterations 1
+smoothSolver:  Solving for Uy, Initial residual = 0.0309712, Final residual = 0.00186527, No Iterations 1
+smoothSolver:  Solving for Uz, Initial residual = 0.0387705, Final residual = 0.002252, No Iterations 1
+DICPCG:  Solving for p, Initial residual = 0.00927754, Final residual = 0.000422598, No Iterations 17
+time step continuity errors : sum local = 0.00846111, global = -0.0010536, cumulative = 0.0215592
+smoothSolver:  Solving for omega, Initial residual = 0.0185988, Final residual = 0.0010333, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.039203, Final residual = 0.00176526, No Iterations 1
+ExecutionTime = 34.8067 s  ClockTime = 35 s
+
+volFieldValue Uavg_propeller write:
+    volAverage(propeller) of U = (0.0531706 0.0087518 -1.35848)
+
+surfaceFieldValue phi_farField write:
+    orientedSum(farField) of phi = 1.41716
+
+surfaceFieldValue phi_top write:
+    orientedSum(top) of phi = -1.46773
+
+End
+

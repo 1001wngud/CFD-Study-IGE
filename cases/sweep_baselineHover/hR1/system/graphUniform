@@ -1,0 +1,8 @@
+start           (0 0 0.90);
+end             (0 0 0.02);
+nPoints         120;
+
+fields          (U);
+axis            z;
+
+#includeEtc "caseDicts/postProcessing/graphs/graphUniform.cfg"

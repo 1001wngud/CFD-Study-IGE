@@ -1,0 +1,29 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : createZones -clear
+Date   : Mar 05 2026
+Time   : 21:23:39
+Host   : "JOO-DESKTOP"
+PID    : 163512
+I/O    : uncollated
+Case   : /home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_sensitivity_lowJtilt/hR0p5
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading "createZonesDict"
+
+End
+

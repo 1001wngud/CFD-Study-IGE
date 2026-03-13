@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamPostProcess -solver incompressibleFluid -latestTime -dict system/day9_outwashDict
+Date   : Mar 06 2026
+Time   : 23:45:05
+Host   : "JOO-DESKTOP"
+PID    : 162590
+I/O    : uncollated
+Case   : /home/joo/OpenFOAM/joo-13/run/trackB_propellerIGE_v13/cases/sweep_baselineHover/hR4
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1000
+
+Reading surface description:
+    groundPlane
+
+Time = 1000s
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type RAS
+    Selecting RAS turbulence model kOmegaSST
+No MRF models present
+
+Selecting patchDistMethod meshWave
+Creating fvModels from "constant/fvModels"
+
+Selecting finite volume model type propellerDisk
+    Name: diskSource
+
+End
+

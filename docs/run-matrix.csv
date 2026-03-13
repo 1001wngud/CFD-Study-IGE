@@ -1,0 +1,13 @@
+case_id,h_over_R,mesh_level,domain_level,curve_variant,control_mode,target_power_ratio,notes
+ref,4,medium,base,base,constantRPM,,reference
+h2,2,medium,base,base,constantRPM,,
+h1,1,medium,base,base,constantRPM,,
+h05,0.5,medium,base,base,constantRPM,,
+h035,0.35,medium,base,base,constantRPM,,
+mesh_ref,4,coarse,base,base,constantRPM,,mesh sensitivity
+mesh_h05,0.5,coarse,base,base,constantRPM,,mesh sensitivity
+dom_h05,0.5,medium,large,base,constantRPM,,domain sensitivity
+cp_h1,1,medium,base,base,constantPower,1.0,adjust n to match Pref
+cp_h05,0.5,medium,base,base,constantPower,1.0,adjust n to match Pref
+curve_p10,0.5,medium,base,plus10,constantRPM,,curve sensitivity
+curve_m10,0.5,medium,base,minus10,constantRPM,,curve sensitivity

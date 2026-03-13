@@ -1,0 +1,46 @@
+#includeFunc graphUniform
+
+Uavg_propeller
+{
+    type            volFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+
+    log             true;
+    writeControl    timeStep;
+    writeInterval   1;
+    writeFields     false;
+
+    cellZone        propeller;
+    operation       volAverage;
+    fields          (U);
+}
+
+phi_farField
+{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+
+    log             true;
+    writeControl    timeStep;
+    writeInterval   1;
+    writeFields     false;
+
+    patch           farField;
+    operation       orientedSum;
+    fields          (phi);
+}
+
+phi_top
+{
+    type            surfaceFieldValue;
+    libs            ("libfieldFunctionObjects.so");
+
+    log             true;
+    writeControl    timeStep;
+    writeInterval   1;
+    writeFields     false;
+
+    patch           top;
+    operation       orientedSum;
+    fields          (phi);
+}

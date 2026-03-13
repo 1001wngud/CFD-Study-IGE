@@ -1,0 +1,57 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      fvModels;
+}
+
+diskSource
+{
+    type            propellerDisk;
+    libs            ("libpropellerDisk.so");
+
+    cellZone        propeller;
+
+    // Downwash를 "지면 방향"으로 만들고 싶으면 보통 -z
+    normal          (0 0 1);
+
+    // 회전속도 [1/s]  (RPM/60). Day4는 유동 생성 확인용이라 적당히
+    n               6.0;
+
+    // 지름 [m]
+    dPropeller      0.50;
+
+    // 허브 지름 [m] (임시값: 0.1m). 나중에 바꿔도 됨
+    dHub            0.10;
+
+    // (Day5 준비) 적분 thrust/torque 등을 로그파일로 뽑게 함
+    log             yes;
+
+    // propellerCurve: (J (Kt Kq)) 테이블
+    // Day4는 “유동이 생기나” 확인용이므로 일단 템플릿 사용
+    propellerCurve
+    {
+        type table;
+        outOfBounds warn;
+        values
+        (
+            (0.10 (0.3267 0.03748))
+            (0.15 (0.3112 0.03629))
+            (0.20 (0.2949 0.03500))
+            (0.25 (0.2777 0.03361))
+            (0.30 (0.2598 0.03210))
+            (0.35 (0.2410 0.03047))
+            (0.40 (0.2214 0.02871))
+            (0.45 (0.2010 0.02682))
+            (0.50 (0.1798 0.02479))
+            (0.55 (0.1577 0.02261))
+            (0.60 (0.1349 0.02027))
+            (0.65 (0.1112 0.01777))
+            (0.70 (0.0867 0.01509))
+            (0.75 (0.0614 0.01224))
+            (0.80 (0.0353 0.00921))
+        );
+    }
+}

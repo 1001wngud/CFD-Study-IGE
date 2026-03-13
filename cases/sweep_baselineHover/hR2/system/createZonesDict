@@ -1,0 +1,17 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      createZonesDict;
+}
+
+propeller
+{
+    type        cylinder;
+    zoneType    cell;
+
+    point1      (0 0 0.475000);
+    point2      (0 0 0.525000);
+    radius      0.25;
+}
